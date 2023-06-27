@@ -541,87 +541,6 @@ p {
   opacity: 0.75;
 }
 
-.about {
-  padding-top: 120px;
-}
-.about__wrapper {
-  display: grid;
-  grid-template-columns: 400px 670px;
-  grid-template-rows: minmax(245px, auto) minmax(255px, auto);
-  grid-auto-rows: minmax(245px, auto);
-  column-gap: 70px;
-  row-gap: 40px;
-}
-.about__photo {
-  grid-row: 1/3;
-}
-.about__photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about__descr {
-  padding-top: 6px;
-}
-.about__descr .divider {
-  margin: 0;
-}
-.about__title {
-  position: relative;
-  padding: 1px 0 0 12px;
-}
-.about__title:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: -25%;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  background: #FFA501;
-}
-.about__text {
-  margin-top: 20px;
-  font-size: 14px;
-  line-height: 21px;
-}
-.about__skills {
-  display: grid;
-  grid-template: repeat(2, minmax(115px, auto))/repeat(2, 260px);
-  grid-auto-rows: 1fr;
-  column-gap: 50px;
-  row-gap: 20px;
-}
-.about__skills-item {
-  display: grid;
-  grid-template-columns: 40px 200px;
-  column-gap: 20px;
-}
-.about__skills-circle {
-  position: relative;
-  padding: 15px 0 0 15px;
-}
-.about__skills-circle:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: -25%;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  background: #FFA501;
-}
-.about__skills-circle:before {
-  top: 0;
-}
-.about__skills-text {
-  margin-top: 6px;
-  font-size: 12px;
-  line-height: 18px;
-}
-
 .resume {
   padding-top: 120px;
 }
@@ -710,151 +629,6 @@ p {
   margin-top: 5px;
 }
 .resume__item-body {
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.skills {
-  padding-top: 120px;
-}
-.skills__items {
-  margin-top: 60px;
-  padding: 0 10px;
-  display: grid;
-  grid-template: repeat(2, minmax(270px, auto))/repeat(4, 270px);
-  grid-auto-rows: minmax(270px, auto);
-  gap: 13px;
-}
-.skills__item {
-  border: 1px solid black;
-  padding: 30px 30px 25px 30px;
-}
-.skills__item-img {
-  display: flex;
-  align-items: center;
-  min-height: 65px;
-}
-.skills__item h3 {
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-.skills__item p {
-  margin-top: 15px;
-  margin-bottom: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-.skills__ratings {
-  margin-top: 120px;
-  display: grid;
-  grid-template: repeat(2, minmax(70px, auto))/repeat(3, 350px);
-  column-gap: 45px;
-  row-gap: 35px;
-}
-.skills__ratings-item {
-  display: grid;
-  grid-template: minmax(21px, auto) 14px/200px 35px;
-  justify-content: space-between;
-  align-content: space-between;
-}
-.skills__ratings-title {
-  position: relative;
-  padding: 2px 0 0 13px;
-}
-.skills__ratings-title:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: -25%;
-  left: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  background: #FFA501;
-}
-.skills__ratings-counter {
-  font-size: 14px;
-  line-height: 21px;
-}
-.skills__ratings-line {
-  width: 350px;
-  height: 14px;
-  background-color: #E8E4DE;
-  border-radius: 4px;
-  grid-column: 1/3;
-}
-.skills__ratings-line span {
-  display: block;
-  height: 100%;
-  background-color: #FFA501;
-  border-radius: 4px;
-}
-
-.portfolio {
-  padding-top: 120px;
-}
-.portfolio__wrapper {
-  margin-top: 60px;
-  display: grid;
-  grid-template: repeat(2, 280px)/repeat(4, 280px);
-  grid-auto-rows: 280px;
-  gap: 5px;
-}
-.portfolio__wrapper .vertical {
-  grid-row: 1/3;
-  grid-column: 4/5;
-}
-.portfolio__wrapper .horizonal {
-  grid-row: 2/3;
-  grid-column: 2/4;
-}
-.portfolio__item {
-  transition: all 0.6s;
-}
-.portfolio__item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.price {
-  padding-top: 60px;
-}
-.price__wrapper {
-  margin-top: 60px;
-  padding: 0 60px;
-  display: grid;
-  grid-template: repeat(3, minmax(45px, auto))/repeat(2, 365px);
-  grid-auto-rows: minmax(45px, auto);
-  row-gap: 15px;
-  justify-content: space-between;
-}
-.price__item {
-  position: relative;
-  display: grid;
-  grid-template: repeat(2, minmax(21px, auto))/repeat(2, auto);
-  row-gap: 5px;
-  padding-left: 25px;
-}
-.price__item:before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: #FFA501;
-  border-radius: 100%;
-  position: absolute;
-  top: 5px;
-}
-.price__type, .price__count {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 21px;
-}
-.price__count {
-  justify-self: end;
-}
-.price__descr {
-  grid-column: 1/3;
   font-size: 12px;
   line-height: 18px;
 }
@@ -949,6 +723,15 @@ p {
   padding: 0 20px;
   font-size: 12px;
 }
+.contacts__input.error input {
+  border-color: red;
+}
+.contacts__input.success input {
+  border-color: green;
+}
+.contacts__input small {
+  color: red;
+}
 .contacts__textarea {
   position: relative;
   grid-column: 1/3;
@@ -977,46 +760,6 @@ p {
     max-width: 960px;
   }
 
-  .about__wrapper {
-    grid-template-columns: 400px 520px;
-    column-gap: 40px;
-  }
-  .about__skills {
-    column-gap: 20px;
-    grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
-  }
-  .about__skills-item {
-    grid-template-columns: 40px 195px;
-    column-gap: 15px;
-  }
-
-  .resume__wrapper {
-    padding: 40px 20px 0 20px;
-    column-gap: 80px;
-  }
-
-  .skills__items {
-    grid-template-columns: repeat(auto-fit, 270px);
-    justify-content: space-between;
-  }
-  .skills__ratings {
-    grid-template-columns: repeat(auto-fit, 350px);
-    grid-auto-rows: minmax(70px, auto);
-    justify-content: space-between;
-    padding: 0 30px;
-  }
-
-  .portfolio__wrapper {
-    grid-template-columns: repeat(auto-fit, 280px);
-    grid-auto-rows: 280px;
-    justify-content: space-around;
-    row-gap: 35px;
-  }
-  .portfolio__wrapper .horizonal, .portfolio__wrapper .vertical {
-    grid-row: unset;
-    grid-column: unset;
-  }
-
   .contacts__wrapper {
     padding: 0;
     grid-template-columns: 400px 520px;
@@ -1038,41 +781,6 @@ p {
 
   .divider {
     margin: 15px auto 0 auto;
-  }
-
-  .about__wrapper {
-    grid-template-columns: 300px 380px;
-  }
-  .about__skills {
-    grid-template-columns: 380px;
-    grid-auto-rows: minmax(115px, auto);
-  }
-  .about__skills-item {
-    grid-template-columns: 40px 320px;
-    column-gap: 20px;
-  }
-
-  .resume__wrapper {
-    column-gap: 60px;
-    grid-template-columns: repeat(2, 320px);
-  }
-
-  .skills__items {
-    padding: 0 20px;
-  }
-  .skills__ratings {
-    grid-template-columns: repeat(auto-fit, 320px);
-    justify-content: space-between;
-    padding: 0;
-    column-gap: 0;
-  }
-  .skills__ratings-line {
-    width: 100%;
-  }
-
-  .price__wrapper {
-    grid-template-columns: repeat(auto-fit, 350px);
-    padding: 0;
   }
 
   .contacts__wrapper {
@@ -1098,62 +806,6 @@ p {
   .promo__title {
     line-height: 39px;
     width: 300px;
-  }
-
-  .about {
-    padding-top: 40px;
-  }
-  .about__wrapper {
-    grid-template: 400px auto auto/1fr;
-  }
-  .about__photo {
-    grid-row: unset;
-  }
-  .about__skills {
-    grid-template-columns: repeat(2, 260px);
-  }
-  .about__skills-item {
-    grid-template-columns: 40px 200px;
-    column-gap: 20px;
-  }
-
-  .resume {
-    padding-top: 40px;
-  }
-  .resume__wrapper {
-    grid-template-columns: 1fr;
-    column-gap: 60px;
-    row-gap: 40px;
-  }
-
-  .skills {
-    padding-top: 40px;
-  }
-  .skills__items {
-    padding: 0;
-    justify-content: center;
-    gap: 20px;
-  }
-  .skills__ratings {
-    grid-template-columns: repeat(auto-fit, 320px);
-    grid-auto-rows: minmax(70px, auto);
-    justify-content: center;
-    margin-top: 40px;
-  }
-  .skills__ratings-line {
-    width: 100%;
-  }
-
-  .portfolio {
-    padding-top: 40px;
-  }
-
-  .price {
-    padding-top: 40px;
-  }
-  .price__wrapper {
-    margin-top: 20px;
-    justify-content: center;
   }
 
   .contacts {
@@ -1194,28 +846,6 @@ p {
 
   .promo__btns {
     margin-top: 30px;
-  }
-
-  .about__wrapper {
-    grid-template: 340px auto auto/1fr;
-  }
-  .about__skills {
-    grid-template-columns: 1fr;
-  }
-
-  .resume__wrapper {
-    padding: 40px 5px 0 5px;
-  }
-
-  .skills__items {
-    margin-top: 20px;
-  }
-  .skills__ratings {
-    grid-template-columns: repeat(auto-fit, 300px);
-  }
-
-  .price__wrapper {
-    grid-template-columns: repeat(auto-fit, 295px);
   }
 
   .contacts {
